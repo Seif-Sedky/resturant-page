@@ -74,7 +74,7 @@ function displayLandingPage() {
     quote.style.lineHeight = "1.4";
     quote.style.border = "2px solid rgba(200, 122, 91, 0.3)";
     quote.style.alignSelf = "start";
-    quote.style.marginTop = "14vh";
+    quote.style.marginTop = "15vh";
 
 
 
@@ -126,8 +126,7 @@ function displayNewPage(buttonClicked) {
             break;
     }
 
-    buttonClicked.style.backgroundColor = "black";
-    buttonClicked.style.color = "white";
+    buttonClicked.classList.add('selected');
 
 }
 

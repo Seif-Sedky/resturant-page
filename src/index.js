@@ -41,10 +41,13 @@ function clear(content) {
 function displayNewPage(buttonClicked) {
     switch (buttonClicked.id) {
         case "home":
+            displayHome();
             break;
         case "menu":
+            displayMenu();
             break;
         case "about":
+            displayAbout();
             break;
     }
 

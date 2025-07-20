@@ -1,10 +1,15 @@
 import './style.css';
+import displayHome from "home.js";
+import displayAbout from "about.js";
+import displayMenu from "menu.js";
+
 
 
 
 //design landing page 
-
-
+function displayLandingPage() {
+    const content = document.querySelector("#content");
+}
 
 //"Meals you’ll remember. Moments you’ll relive."
 
@@ -12,4 +17,41 @@ import './style.css';
 
 
 
-//event listener to call the following function: delete all current components in content / deploy the function based on what is selected / make whatever is selected black and white 
+function addEventListeners() {
+    const content = document.querySelector("#content");
+    const navs = document.querySelector("#navs");
+
+    //event delegation
+    navs.addEventListener(e, (e) => {
+        if (e.target.classList.contains("nav")) {
+            clear(content);
+            displayNewPage(e.target);
+        }
+    });
+
+
+}
+
+function clear(content) {
+    while (content.firstChild) {
+        parentElement.removeChild(content.firstChild);
+    }
+}
+
+function displayNewPage(buttonClicked) {
+    switch (buttonClicked.id) {
+        case "home":
+            break;
+        case "menu":
+            break;
+        case "about":
+            break;
+    }
+
+    buttonClicked.style.backgroundColor = "black";
+    buttonClicked.style.color = "white";
+
+}
+
+addEventListeners();
+displayLandingPage();

@@ -3,14 +3,12 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    //default 
-    mode: "development",
-    //start of dependency chain which is automatically done in the depndency graph, with tree shaking (no unused files)
+    //start of dependency chain which is automatically done in the depndency graph, with tree shaking (no unused files), could be multiple files
     entry: "./src/index.js",
     output: {
         //dist is a convention
-        filename: "main.js",
         path: path.resolve(__dirname, "dist"),
+        filename: "main.js",
         clean: true,
     },
     plugins: [

@@ -100,6 +100,9 @@ function addEventListeners() {
     navs.addEventListener("click", (e) => {
         if (e.target.classList.contains("nav")) {
             clear(content);
+            for (let child of navs.children) {
+                child.classList.remove("selected");
+            }
             displayNewPage(e.target);
         }
     });

@@ -1,0 +1,168 @@
+/* About page styles */
+.about-container {
+    background-color: #F8F7F0;
+    padding: 4rem 2rem;
+    min-height: 100vh;
+    font-family: Georgia, serif;
+}
+
+/* Hero section */
+.about-hero {
+    max-width: 1200px;
+    margin: 0 auto 4rem auto;
+    text-align: center;
+}
+
+.about-main-title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #2C1810;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.about-subtitle {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #C87A5B;
+    margin-bottom: 3rem;
+}
+
+/* Story section */
+.about-story {
+    max-width: 800px;
+    margin: 0 auto 4rem auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-story-title {
+    font-size: 2.5rem;
+    color: #2C1810;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.about-story-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #4A3728;
+    text-align: justify;
+}
+
+/* Contact grid */
+.about-contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Contact card */
+.contact-card {
+    background-color: rgba(200, 122, 91, 0.15);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 2px solid rgba(200, 122, 91, 0.3);
+}
+
+.contact-title {
+    font-size: 2rem;
+    color: #2C1810;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #4A3728;
+}
+
+/* Hours card */
+.hours-card {
+    background-color: rgba(44, 24, 16, 0.05);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 2px solid rgba(44, 24, 16, 0.1);
+}
+
+.hours-title {
+    font-size: 2rem;
+    color: #2C1810;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.hours-item {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    color: #4A3728;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hours-note {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: #C87A5B;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Reservation section */
+.reservation-section {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.reservation-btn {
+    background-color: #C87A5B;
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.reservation-btn:hover {
+    background-color: #A66849;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(200, 122, 91, 0.4);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 2rem 1rem;
+    }
+    
+    .about-main-title {
+        font-size: 2.5rem;
+    }
+    
+    .about-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .about-story {
+        padding: 2rem;
+    }
+    
+    .contact-card,
+    .hours-card {
+        padding: 2rem;
+    }
+    
+    .hours-item {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+}

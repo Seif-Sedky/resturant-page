@@ -1,5 +1,4 @@
 import './style.css';
-import displayHome from "./home.js";
 import displayAbout from "./about.js";
 import displayMenu from "./menu.js";
 import img1Src from "./imgs/img1.png";
@@ -98,7 +97,7 @@ function addEventListeners() {
 
     //event delegation
     navs.addEventListener("click", (e) => {
-        if (e.target.classList.contains("nav")) {
+        if (e.target.classList.contains("nav")&&!e.target.classList.contains("selected")) {
             clear(content);
             for (let child of navs.children) {
                 child.classList.remove("selected");
@@ -119,7 +118,7 @@ function clear(content) {
 function displayNewPage(buttonClicked) {
     switch (buttonClicked.id) {
         case "home":
-            displayHome();
+            displayLandingPage();
             break;
         case "menu":
             displayMenu();

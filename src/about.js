@@ -3,9 +3,6 @@ import './about.css';
 function displayAbout() {
     const content = document.querySelector("#content");
 
-    // Clear existing content
-    content.innerHTML = '';
-
     // Main container
     const container = document.createElement('div');
     container.className = 'about-container';

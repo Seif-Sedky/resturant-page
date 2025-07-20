@@ -14,10 +14,7 @@ A fully modular, single-page restaurant site built with **vanilla JavaScript** a
   * `:hover`, `:nth-child` and other pseudo-classes
   * `transform`, `z-index`, custom box shadows, and layered effects
   * Clean layout using `flexbox` and responsive design principles
-* **Source Folder Architecture**: Organized `src/` directory with dedicated files for logic (`.js`), styles (`.css`), and template (`.html`) files.
-  📁 *Screenshot below shows actual project structure in VS Code.*
 
-![Project Structure Screenshot](./13bf7ed5-cead-42f7-8358-9447145da29b.png)
 
 ## 📂 Project Structure (as seen above)
 

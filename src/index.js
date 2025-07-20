@@ -1,7 +1,7 @@
 import './style.css';
-import displayHome from "home.js";
-import displayAbout from "about.js";
-import displayMenu from "menu.js";
+import displayHome from "./home.js";
+import displayAbout from "./about.js";
+import displayMenu from "./menu.js";
 
 
 
@@ -9,6 +9,18 @@ import displayMenu from "menu.js";
 //design landing page 
 function displayLandingPage() {
     const content = document.querySelector("#content");
+
+    let quote = document.createElement("p");
+    let img1 = document.createElement('img');
+    let img2 = document.createElement('img');
+
+    quote.textContent = "\"Meals you’ll remember. Moments you’ll relive.\"";
+
+    content.appendChild(quote);
+    content.appendChild(img1);
+    content.appendChild(img2);
+
+
 }
 
 //"Meals you’ll remember. Moments you’ll relive."
